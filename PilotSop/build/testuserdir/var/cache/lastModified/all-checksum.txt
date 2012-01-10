@@ -1,0 +1,5 @@
+C:\Program Files\NetBeans 7.0.1\platform=1322286486847
+D:\My Project\sandbox\PilotSop\build\cluster=1326165080000
+C:\Program Files\NetBeans 7.0.1\platform=1322286486847
+D:\My Project\sandbox\PilotSop\build\testuserdir=1326165080000
+crc=7

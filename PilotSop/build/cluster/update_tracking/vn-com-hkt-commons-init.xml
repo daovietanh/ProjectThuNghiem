@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="vn.com.hkt.commons.init">
+    <module_version install_time="1326165075481" last="true" origin="installer" specification_version="1.0">
+        <file crc="17901074" name="config/Modules/vn-com-hkt-commons-init.xml"/>
+        <file crc="2913998947" name="modules/ext/jxl.jar"/>
+        <file crc="1615929143" name="modules/vn-com-hkt-commons-init.jar"/>
+    </module_version>
+</module>

@@ -45,14 +45,11 @@ public class DepartmentParent extends Children.Keys {
 
     @Override
     protected Node[] createNodes(Object key) {
-        //Node rootNode = null;
-//        if (b) {
-//            rootNode = new AbstractNode(new PersonParent(department1),Lookups.singleton(department1));    
-//        }
+
         final Department department1 = (Department) key;
         if (department1.getEnterpriseID().equals("")){
             Node rootNode = null;
-            rootNode = new AbstractNode(new PersonParent(department1),Lookups.singleton(department1));    
+            rootNode = new AbstractNode(new PersonParent(department1,enterprise),Lookups.singleton(department1));    
             rootNode.setDisplayName("Person");
             return new Node[]{rootNode};
         }

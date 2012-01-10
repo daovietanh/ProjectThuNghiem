@@ -21,6 +21,7 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.Lookups;
 import vn.com.hkt.basic.api.IPersonBN;
 import vn.com.hkt.pilot.entities.Department;
+import vn.com.hkt.pilot.entities.Enterprise;
 import vn.com.hkt.pilot.entities.Mission;
 import vn.com.hkt.pilot.entities.Person;
 
@@ -36,13 +37,15 @@ public class PersonChildren extends Children.Keys{
     private Person person;
     private Department department;
     private Mission mission;
+    Enterprise enterprise;
     public PersonChildren(boolean lazy) {
         super(lazy);
     }
 
-    public PersonChildren(Mission m, Department department) {      
+    public PersonChildren(Mission m, Department department,Enterprise enterprise) {      
         this.mission = m;
         this.department = department;
+        this.enterprise = enterprise ;
     }
     
     
@@ -132,12 +135,40 @@ public class PersonChildren extends Children.Keys{
             setKeys(persons);
         }
         else
-        if (department != null) {
+        if (!department.getDepartmentName().equals("")) {
+            JOptionPane.showMessageDialog(null, department.getDepartmentName());
+            JOptionPane.showMessageDialog(null, enterprise.getEnterpriseName());
             list = personBN.getAllPerson();
             super.addNotify();
             Vector instr = new Vector();
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).getDepartmentName().equals(department.getDepartmentName()) && list.get(i).getPosition().equals(mission.getMissionName())) {
+                   // JOptionPane.showMessageDialog(null, "Lastname = "+ list.get(i).getLastName());
+                    Person person1 = new Person();
+                    person1.setDepartmentName(list.get(i).getDepartmentName());
+                    person1.setEnterpriseID(list.get(i).getEnterpriseID());
+                    person1.setFirstName(list.get(i).getFirstName());
+                    person1.setLastName(list.get(i).getLastName());
+                    person1.setPersonID(list.get(i).getPersonID());
+                    instr.addElement(person1);
+                }
+
+            }
+
+            //JOptionPane.showMessageDialog(null, "So per"+ instr.size());
+            Person[] persons = new Person[instr.size()];
+            for (int i = 0; i < instr.size(); i++) {
+                persons[i] = (Person) instr.elementAt(i);
+            }
+            setKeys(persons);
+        }
+        else {
+            list = personBN.getAllPerson();
+            super.addNotify();
+            Vector instr = new Vector();
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i).getEnterpriseID().equals(enterprise.getEnterpriseName()) && list.get(i).getPosition().equals(mission.getMissionName()) 
+                        && list.get(i).getDepartmentName().equals(department.getDepartmentName())) {
                    // JOptionPane.showMessageDialog(null, "Lastname = "+ list.get(i).getLastName());
                     Person person1 = new Person();
                     person1.setDepartmentName(list.get(i).getDepartmentName());

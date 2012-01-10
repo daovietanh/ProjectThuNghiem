@@ -4,7 +4,6 @@
  */
 package vn.com.hkt.tree.ui.department;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import org.openide.nodes.AbstractNode;
@@ -16,6 +15,7 @@ import org.openide.util.lookup.Lookups;
 import vn.com.hkt.basic.api.IPersonBN;
 import vn.com.hkt.pilot.dialog.dao.MissionBN;
 import vn.com.hkt.pilot.entities.Department;
+import vn.com.hkt.pilot.entities.Enterprise;
 import vn.com.hkt.pilot.entities.Mission;
 import vn.com.hkt.pilot.entities.Person;
 
@@ -31,6 +31,7 @@ public class PersonParent extends Children.Keys{
     public static String Congtyme_PROPERTY = "CongTy";
     private Person person;
     private Department department;
+    private Enterprise enterprise;
 
     public PersonParent(boolean lazy) {
         super(lazy);
@@ -41,8 +42,8 @@ public class PersonParent extends Children.Keys{
         this.person = person;
         this.department = department;
     }
-      public PersonParent(Department department) {
-        
+      public PersonParent(Department department,Enterprise enterprise) {
+        this.enterprise = enterprise;
         this.department = department;
     }
 
@@ -52,7 +53,7 @@ public class PersonParent extends Children.Keys{
         final Mission mission1 = (Mission) key;
 
         
-        Node result = new AbstractNode(new PersonChildren(mission1,department), Lookups.singleton(mission1)) {
+        Node result = new AbstractNode(new PersonChildren(mission1,department,enterprise), Lookups.singleton(mission1)) {
 
             @Override
             protected Sheet createSheet() {

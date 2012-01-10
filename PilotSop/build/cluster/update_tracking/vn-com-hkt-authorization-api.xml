@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="vn.com.hkt.authorization.api">
+    <module_version install_time="1326165073722" last="true" origin="installer" specification_version="1.0">
+        <file crc="520704302" name="config/Modules/vn-com-hkt-authorization-api.xml"/>
+        <file crc="1511375237" name="modules/vn-com-hkt-authorization-api.jar"/>
+    </module_version>
+</module>
