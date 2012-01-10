@@ -108,7 +108,6 @@ public class EnterpriseChildren extends Children.Keys {
             }
 
         }
-
         Enterprise[] enterprises = new Enterprise[instr.size()];
         for (int i = 0; i < instr.size(); i++) {
             enterprises[i] = (Enterprise) instr.elementAt(i);

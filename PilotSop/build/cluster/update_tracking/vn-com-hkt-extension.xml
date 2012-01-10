@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module codename="vn.com.hkt.extension">
-    <module_version install_time="1326165078257" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1326184833660" last="true" origin="installer" specification_version="1.0">
         <file crc="1879094464" name="config/Modules/vn-com-hkt-extension.xml"/>
-        <file crc="3236120232" name="modules/vn-com-hkt-extension.jar"/>
+        <file crc="2054478960" name="modules/vn-com-hkt-extension.jar"/>
     </module_version>
 </module>

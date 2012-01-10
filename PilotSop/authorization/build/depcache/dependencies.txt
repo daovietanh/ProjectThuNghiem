@@ -205,14 +205,14 @@ java.lang.Object
 vn.com.hkt.authorization.gui.ManageUserTopComponent
 vn.com.hkt.authorization.gui.ManageUserTopComponent$14
 java.awt.event.ActionListener
-||:vn.com.hkt.authorization.api.IAuthorization
-java.lang.Object
-vn.com.hkt.authorization.api.IAuthorization
 ||:vn.com.hkt.authorization.gui.ManageUserTopComponent$13
 java.lang.Object
 vn.com.hkt.authorization.gui.ManageUserTopComponent
 java.awt.event.ActionListener
 vn.com.hkt.authorization.gui.ManageUserTopComponent$13
+||:vn.com.hkt.authorization.api.IAuthorization
+java.lang.Object
+vn.com.hkt.authorization.api.IAuthorization
 ||:vn.com.hkt.authorization.gui.ManageUserTopComponent$12
 java.lang.Object
 vn.com.hkt.authorization.gui.ManageUserTopComponent$12

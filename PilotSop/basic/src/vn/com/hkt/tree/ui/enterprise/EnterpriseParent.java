@@ -12,6 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
+import javax.swing.JOptionPane;
 import org.openide.nodes.AbstractNode;
 import org.openide.nodes.Children;
 import org.openide.nodes.Node;
@@ -42,7 +43,7 @@ public class EnterpriseParent extends Children.Keys {
     }
 
     public EnterpriseParent() {
-
+        JOptionPane.showMessageDialog(null, "test");
         list = enterpriseBN.getAllEnterprise();
 
     }

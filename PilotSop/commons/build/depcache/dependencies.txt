@@ -30,11 +30,6 @@ java.text.DateFormat
 com.vn.hkt.generic.api.IGenericAPI
 java.lang.String
 vn.com.hkt.commons.api.IBaseData
-||:vn.com.hkt.commons.gui.CreateNewDataTopComponent$2
-java.lang.Object
-vn.com.hkt.commons.gui.CreateNewDataTopComponent
-vn.com.hkt.commons.gui.CreateNewDataTopComponent$2
-java.awt.event.ActionListener
 ||:vn.com.hkt.commons.gui.CreateNewDataTopComponent
 java.lang.StringBuilder
 vn.com.hkt.commons.gui.CreateNewDataTopComponent$2
@@ -63,6 +58,11 @@ javax.swing.GroupLayout$Group
 java.lang.String
 javax.swing.JOptionPane
 vn.com.hkt.commons.api.IBaseData
+||:vn.com.hkt.commons.gui.CreateNewDataTopComponent$2
+java.lang.Object
+vn.com.hkt.commons.gui.CreateNewDataTopComponent
+vn.com.hkt.commons.gui.CreateNewDataTopComponent$2
+java.awt.event.ActionListener
 ||:vn.com.hkt.commons.gui.CreateNewDataTopComponent$1
 java.lang.Object
 vn.com.hkt.commons.gui.CreateNewDataTopComponent

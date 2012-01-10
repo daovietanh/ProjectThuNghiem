@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module codename="com.vn.hkt.core">
-    <module_version install_time="1326165067735" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1326184821158" last="true" origin="installer" specification_version="1.0">
         <file crc="518414339" name="config/Modules/com-vn-hkt-core.xml"/>
         <file crc="3693909668" name="modules/com-vn-hkt-core.jar"/>
         <file crc="995662278" name="modules/ext/eclipselink-2.2.0.jar"/>
