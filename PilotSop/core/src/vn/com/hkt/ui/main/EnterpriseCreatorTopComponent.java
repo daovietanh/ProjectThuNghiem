@@ -1,8 +1,8 @@
-/*
+﻿/*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package vn.com.hkt.ui.main;
+package vn.com.hkt.ui.main ;
 
 import java.awt.GridLayout;
 import java.io.IOException;
